@@ -1,0 +1,134 @@
+@charset "iso-8859-1";
+/* STYLE DO LOAD DA PAGINA */
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* STYLE DE RADIO BUTTON */
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon{
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: -5%;
+}
+
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: -10%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+
+/* CSS Document */
+body 				{ font-family:Tahoma, Geneva, sans-serif; font-size:11px;}
+.border				{ border-bottom:1px dotted black}
+.dirCampo			{ border:1px solid #000}
+.pageUmRevalidacoes { border-bottom:1px solid #000;}
+
+.padrao 		{font-family: arial; font-size: 11px;} 
+.formulario_	{font-family: arial; font-size: 10px; color:#000000;} 
+.formulario		{font-family: arial; font-size: 11px; color:#000000;} 
+.formlogin 		{font-size: 11px; font-family: verdana; background-color: #FFFFFF; color: #000000; border-color: #858585; border-width: 1; border-style: solid;}
+.cabecalho 		{font-family: arial; font-size: 11px; color: red} 
+.lista 			{font-family: arial; font-size: 11px;}
+.iframe 		{font-family: arial; font-size: 11px; color: #000000; padding-left: 5px; padding-top: 2px; padding-bottom: 2px;}  
+.form			{font-size: 11px; font-family: arial; 	background-color: #FFFFFF;}
+
+.bgcolor		{background-color: #FF5E5E;}
+.bgcolor0		{background-color: #EEF0EF;}
+.bgcolor1		{background-color: #FFFFFF;}
+
+.listaPendentes0 {background-color: #EEF0EF;font-family: arial; font-size: 11px;}
+.listaPendentes1 {background-color: #FFFFFF;font-family: arial; font-size: 11px;}
+
+.barra			{SCROLLBAR-FACE-COLOR: #DFDFDF; SCROLLBAR-HIGHLIGHT-COLOR: #F3F3EF; SCROLLBAR-SHADOW-COLOR: #F3F3EF; SCROLLBAR-3DLIGHT-COLOR: #F3F3EF; SCROLLBAR-ARROW-COLOR: #F3F3EF; SCROLLBAR-TRACK-COLOR: #F3F3EF; SCROLLBAR-DARKSHADOW-COLOR: #F3F3EF;}
+.barra_pr		{SCROLLBAR-FACE-COLOR: #A6A6A6; SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF; SCROLLBAR-SHADOW-COLOR: #FFFFFF; SCROLLBAR-3DLIGHT-COLOR: #DFDFDF; SCROLLBAR-ARROW-COLOR: #FFFFFF; SCROLLBAR-TRACK-COLOR: #DFDFDF; SCROLLBAR-DARKSHADOW-COLOR: #DFDFDF;}
+.menuesq		{font-family:Arial; font-size:13px; color:#F66; font-weight:bold}
+.menuesq a		{font-family:Arial; font-size:11px; cursor:pointer; text-decoration:none; padding-left:10px; font-weight:bold; color:#000}
+
+.inputTxt		{font-family:Arial; color:#333333; width:90px; height:15px}
+.inputSelect	{font-family:Arial; color:#333333; width:90px; height:20px}
+.inputArea		{font-family:Arial; color:#333333;}
+
+.botao 			{font-size: 11px; font-family: arial; color: #003466; font-weight: bold; background-color: #E5E5E5; height: 19px; top : 0px; cursor: pointer;border-color:#000}
+.anexo			{font-size: 10px; font-family: arial; color: black; font-weight: bold; background-color: #E4E4E4; height: 19px; top : 0px;}
+a				{text-decoration:none; color:#000;}
+
+
+.required {
+
+	color: #FF4B33;
+	font-weight: bold;
+	font-size: 15pt;
+}
